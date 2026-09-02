@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#F6F7FB"/>
+<meta name="description" content="Ludhiana Service — Shopkeeper Registration 2025. Fill one short form and register your shop. Free."/>
+<title>Ludhiana Service — Shop Registration</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366F1'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#F6F7FB;
+  --ink:#0F1222;
+  --mut:#5B6072;
+  --line:rgba(15,18,34,.08);
+  --i1:#6366F1; --i2:#8B5CF6;
+  --grad:linear-gradient(135deg,#6366F1,#8B5CF6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);
+  background:var(--bg);line-height:1.6;overflow-x:clip;
+  -webkit-tap-highlight-color:transparent;
+}
+::selection{background:rgba(99,102,241,.25)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--i1);outline-offset:3px;border-radius:6px}
+.wrap{max-width:640px;margin:0 auto;padding-left:20px;padding-right:20px}
+
+/* ---------- aurora orbs ---------- */
+.orb{position:fixed;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:-1;opacity:.55}
+.orb1{width:420px;height:420px;background:#C7D2FE;top:-140px;left:-140px;animation:d1 18s ease-in-out infinite alternate}
+.orb2{width:380px;height:380px;background:#DDD6FE;bottom:-120px;right:-120px;animation:d2 22s ease-in-out infinite alternate}
+.orb3{width:280px;height:280px;background:#A5F3FC;top:38%;right:-160px;opacity:.38;animation:d3 26s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(60px,50px) scale(1.1)}}
+@keyframes d2{to{transform:translate(-70px,-40px) scale(1.08)}}
+@keyframes d3{to{transform:translate(-40px,-70px)}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .65s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .65s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- header ---------- */
+header{position:sticky;top:12px;z-index:50;padding:0 14px}
+.nav{max-width:640px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--line);border-radius:999px;padding:9px 12px 9px 9px;
+  box-shadow:0 10px 30px -10px rgba(15,18,34,.12)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{width:34px;height:34px;border-radius:11px;background:var(--grad);display:grid;place-items:center;box-shadow:0 6px 14px -4px rgba(99,102,241,.5)}
+.mark svg{width:18px;height:18px;stroke:#fff}
+.bname{font-weight:800;font-size:14.5px;letter-spacing:-.01em}
+.bname small{display:block;font-weight:600;font-size:10px;color:var(--mut);letter-spacing:.06em;line-height:1.1}
+.open-pill{display:flex;align-items:center;gap:7px;background:#ECFDF5;border:1px solid #A7F3D0;color:#047857;
+  font-size:11px;font-weight:700;letter-spacing:.05em;padding:6px 12px;border-radius:999px}
+.pdot{width:7px;height:7px;border-radius:50%;background:#10B981;position:relative}
+.pdot::after{content:"";position:absolute;inset:-3px;border:1.5px solid #10B981;border-radius:50%;animation:pw 1.8s ease-out infinite}
+@keyframes pw{from{transform:scale(.5);opacity:.9}to{transform:scale(1.6);opacity:0}}
+
+/* ---------- hero ---------- */
+.hero{text-align:center;padding-top:52px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:7px 15px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--mut);
+  box-shadow:0 8px 24px -10px rgba(15,18,34,.12)}
+.badge .pdot{background:var(--i1)}
+.badge .pdot::after{border-color:var(--i1)}
+h1{font-size:clamp(2.3rem,10vw,3.5rem);font-weight:800;line-height:1.08;letter-spacing:-.035em;margin-top:18px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.sub{margin:16px auto 0;max-width:44ch;font-size:15.5px;color:var(--mut)}
+.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:700;color:var(--ink);
+  box-shadow:0 6px 18px -8px rgba(15,18,34,.1)}
+.chip svg{width:14px;height:14px;stroke:var(--i1)}
+
+/* ---------- register card (signature) ---------- */
+.stage{position:relative;margin-top:40px}
+.card{position:relative;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(15,18,34,.07);border-radius:26px;padding:32px 22px 28px;text-align:center;
+  box-shadow:0 30px 70px -24px rgba(15,18,34,.22)}
+.cicon{width:48px;height:48px;border-radius:15px;background:var(--grad);display:grid;place-items:center;margin:0 auto;
+  box-shadow:0 10px 24px -6px rgba(99,102,241,.55);animation:bob 4.5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.cicon svg{width:24px;height:24px;stroke:#fff}
+.card h2{margin-top:16px;font-size:20px;font-weight:800;letter-spacing:-.02em}
+.card p{margin-top:5px;font-size:13.5px;color:var(--mut)}
+.btn{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;max-width:340px;margin:24px auto 0;padding:18px 28px;border-radius:999px;
+  background:var(--grad);color:#fff;font-weight:800;font-size:17px;letter-spacing:.01em;text-decoration:none;
+  box-shadow:0 14px 34px -8px rgba(99,102,241,.6),inset 0 1px 0 rgba(255,255,255,.28);
+  overflow:hidden;transition:transform .16s,box-shadow .25s}
+.btn::before{content:"";position:absolute;top:0;left:-90%;width:45%;height:100%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);
+  animation:shine 3.4s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-90%}100%{left:170%}}
+.btn .arr{width:18px;height:18px;stroke:#fff;transition:transform .2s}
+@media(hover:hover){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 20px 44px -10px rgba(99,102,241,.7),inset 0 1px 0 rgba(255,255,255,.28)}
+  .btn:hover .arr{transform:translateX(4px)}
+}
+.btn:active{transform:scale(.96)}
+.micro{margin-top:16px;font-size:11.5px;color:var(--mut);letter-spacing:.02em}
+.micro a{color:var(--i1);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.ring{position:absolute;border-radius:50%;border:2px solid rgba(99,102,241,.45);pointer-events:none;z-index:1}
+.spark{position:absolute;border-radius:50%;pointer-events:none;z-index:5}
+
+/* ---------- sections ---------- */
+.sec{margin-top:64px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--i1);text-transform:uppercase}
+.kicker::before{content:"";width:18px;height:2px;background:var(--grad);border-radius:2px}
+.sec h2{font-size:24px;font-weight:800;letter-spacing:-.025em;margin-top:8px}
+
+.steps{display:grid;gap:12px;margin-top:20px}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;
+  box-shadow:0 12px 32px -14px rgba(15,18,34,.12);transition:transform .25s,box-shadow .25s}
+.step:hover{transform:translateY(-3px);box-shadow:0 18px 40px -14px rgba(15,18,34,.18)}
+.snum{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#EEF2FF,#F5F3FF);
+  border:1px solid rgba(99,102,241,.18);color:var(--i1);font-weight:800;font-size:15px;display:grid;place-items:center}
+.step h3{margin-top:12px;font-size:15.5px;font-weight:800;letter-spacing:-.01em}
+.step p{margin-top:4px;font-size:13.5px;color:var(--mut)}
+
+.checkcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:8px 20px;margin-top:20px;
+  box-shadow:0 12px 32px -14px rgba(15,18,34,.12)}
+.check{display:flex;gap:13px;align-items:flex-start;padding:15px 0;border-bottom:1px dashed var(--line)}
+.check:last-child{border-bottom:0}
+.tick{width:23px;height:23px;border-radius:50%;background:var(--grad);display:grid;place-items:center;flex:none;margin-top:2px;
+  box-shadow:0 4px 10px -2px rgba(99,102,241,.5)}
+.tick svg{width:12px;height:12px;stroke:#fff;stroke-width:3}
+.check b{font-size:14.5px;font-weight:700;display:block}
+.check span{font-size:12.5px;color:var(--mut)}
+
+/* ---------- footer ---------- */
+footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 0 44px;text-align:center}
+.fbrand{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:14px}
+.fbrand .mark{width:28px;height:28px;border-radius:9px}
+.fbrand .mark svg{width:15px;height:15px}
+.share{display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:11px 20px;font-family:inherit;font-size:12.5px;font-weight:700;color:var(--ink);
+  cursor:pointer;box-shadow:0 8px 22px -10px rgba(15,18,34,.15);transition:transform .15s,background .2s}
+.share svg{width:15px;height:15px;stroke:var(--i1)}
+.share:hover{background:#F1F2FF}
+.share:active{transform:scale(.95)}
+.tiny{margin-top:18px;font-size:11.5px;color:var(--mut)}
+
+/* ---------- toast ---------- */
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,90px);background:var(--ink);color:#fff;
+  padding:11px 20px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.03em;z-index:100;
+  transition:transform .35s cubic-bezier(.2,.9,.3,1.2);box-shadow:0 14px 34px -8px rgba(15,18,34,.4)}
+.toast.show{transform:translate(-50%,0)}
+
+/* ---------- responsive ---------- */
+@media(min-width:640px){
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .hero{padding-top:64px}
+  .card{padding:38px 30px 32px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
+  .rv{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="orb orb1" aria-hidden="true"></div>
+<div class="orb orb2" aria-hidden="true"></div>
+<div class="orb orb3" aria-hidden="true"></div>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v10h16V10"/><path d="M2.5 10 4 4h16l1.5 6"/><path d="M2.5 10h19"/><path d="M9.5 20v-5h5v5"/></svg>
+      </span>
+      <span class="bname">Ludhiana Service<small>Shop Registration</small></span>
+    </a>
+    <span class="open-pill"><span class="pdot" aria-hidden="true"></span>OPEN</span>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- hero -->
+  <section class="hero">
+    <span class="badge rv"><span class="pdot" aria-hidden="true"></span>Registration Open · 2025</span>
+    <h1 class="rv" style="--d:.08s">Register your shop<br><span class="grad">in 2 minutes.</span></h1>
+    <p class="sub rv" style="--d:.16s">Ludhiana Service is onboarding local shopkeepers for 2025.
+      Fill one short form and your shop is on the register — completely free.</p>
+    <div class="chips rv" style="--d:.24s">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Free</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~2 min</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>100% online</span>
+    </div>
+  </section>
+
+  <!-- register card -->
+  <section class="stage" id="stage">
+    <div class="card rv" style="--d:.1s">
+      <span class="cicon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v10h16V10"/><path d="M2.5 10 4 4h16l1.5 6"/><path d="M2.5 10h19"/><path d="M9.5 20v-5h5v5"/></svg>
+      </span>
+      <h2>Ready when you are</h2>
+      <p>One tap — the official registration form opens instantly.</p>
+
+      <a class="btn" id="regBtn" href="https://forms.gle/jtz3J7ZwRWLFnbKn7" target="_blank" rel="noopener"
+         aria-label="Register Now — opens the Google Form in a new tab">
+        Register Now
+        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+
+      <p class="micro" id="micro">Opens the Google Form in a new tab · No payment, no paperwork</p>
+    </div>
+  </section>
+
+  <!-- how it works -->
+  <section class="sec">
+    <div style="text-align:center">
+      <span class="kicker rv">How it works</span>
+      <h2 class="rv" style="--d:.06s">Three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="snum">1</span><h3>Tap Register</h3><p>The official form opens in a new tab — nothing to download.</p></div>
+      <div class="step rv" style="--d:.08s"><span class="snum">2</span><h3>Fill your details</h3><p>Shop name, owner's name and mobile number. Takes about 2 minutes.</p></div>
+      <div class="step rv" style="--d:.16s"><span class="snum">3</span><h3>Submit &amp; done</h3><p>Hit submit and your shop is on the Ludhiana Service register.</p></div>
+    </div>
+  </section>
+
+  <!-- checklist -->
+  <section class="sec">
+    <div style="text-align:center">
+      <span class="kicker rv">Before you start</span>
+      <h2 class="rv" style="--d:.06s">Keep this handy</h2>
+    </div>
+    <div class="checkcard rv" style="--d:.1s">
+      <div class="check"><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Shop name &amp; full address</b><span>The complete name and location of your shop.</span></div></div>
+      <div class="check"><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Owner's name</b><span>Name of the shop owner, as it should appear on the register.</span></div></div>
+      <div class="check"><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Mobile number</b><span>A WhatsApp number is preferred for updates.</span></div></div>
+      <div class="check"><span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>GST / licence no. <span style="color:var(--mut);font-weight:600">(optional)</span></b><span>Only if you have one — you can skip this.</span></div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fbrand">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v10h16V10"/><path d="M2.5 10 4 4h16l1.5 6"/><path d="M2.5 10h19"/><path d="M9.5 20v-5h5v5"/></svg></span>
+      Ludhiana Service
+    </span>
+    <br/>
+    <button class="share" id="shareBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+      Share this page
+    </button>
+    <p class="tiny">© 2025 Ludhiana Service · Ludhiana, Punjab</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status">Link copied</div>
+
+<script>
+(function(){
+  var FORM='https://forms.gle/jtz3J7ZwRWLFnbKn7';
+
+  /* ---- reveal on scroll ---- */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.14});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  /* ---- soft pop sound (only on press) ---- */
+  var ac=null;
+  function pop(){
+    try{
+      ac=ac||new (window.AudioContext||window.webkitAudioContext)();
+      if(ac.state==='suspended')ac.resume();
+      var t=ac.currentTime,o=ac.createOscillator(),g=ac.createGain();
+      o.type='sine';
+      o.frequency.setValueAtTime(520,t);
+      o.frequency.exponentialRampToValueAtTime(160,t+.12);
+      g.gain.setValueAtTime(.0001,t);
+      g.gain.exponentialRampToValueAtTime(.16,t+.015);
+      g.gain.exponentialRampToValueAtTime(.0001,t+.16);
+      o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.18);
+    }catch(e){}
+  }
+
+  var btn=document.getElementById('regBtn'),
+      stage=document.getElementById('stage'),
+      micro=document.getElementById('micro'),
+      pressed=false,
+      COLORS=['#6366F1','#8B5CF6','#22D3EE'];
+
+  /* ---- sparkle burst + ring on press ---- */
+  btn.addEventListener('click',function(){
+    var r=btn.getBoundingClientRect(),s=stage.getBoundingClientRect();
+    var cx=r.left-s.left+r.width/2, cy=r.top-s.top+r.height/2;
+
+    var ring=document.createElement('span');
+    ring.className='ring';
+    ring.style.width=ring.style.height=r.width+'px';
+    ring.style.left=(cx-r.width/2)+'px';
+    ring.style.top=(cy-r.width/2)+'px';
+    stage.appendChild(ring);
+    ring.animate([
+      {transform:'scale(.75)',opacity:.8},
+      {transform:'scale(1.7)',opacity:0}
+    ],{duration:700,easing:'cubic-bezier(.16,.7,.3,1)'}).onfinish=function(){ring.remove();};
+
+    for(var i=0;i<12;i++){
+      var sp=document.createElement('span');
+      sp.className='spark';
+      var sz=4+Math.random()*5;
+      sp.style.width=sp.style.height=sz+'px';
+      sp.style.background=COLORS[i%3];
+      sp.style.left=cx+'px';sp.style.top=cy+'px';
+      stage.appendChild(sp);
+      var a=(Math.PI*2)*(i/12)+Math.random()*.5, d=44+Math.random()*46;
+      sp.animate([
+        {transform:'translate(-50%,-50%) scale(1)',opacity:1},
+        {transform:'translate(calc(-50% + '+(Math.cos(a)*d)+'px),calc(-50% + '+(Math.sin(a)*d-16)+'px)) scale(.15)',opacity:0}
+      ],{duration:620+Math.random()*260,easing:'cubic-bezier(.15,.65,.3,1)'}).onfinish=(function(el){return function(){el.remove();};})(sp);
+    }
+
+    pop();
+    if(navigator.vibrate)navigator.vibrate(25);
+
+    if(!pressed){
+      pressed=true;
+      micro.innerHTML='Form opened in a new tab — didn&rsquo;t open? <a href="'+FORM+'" target="_blank" rel="noopener">Tap here</a>';
+    }
+  });
+
+  /* ---- share + toast ---- */
+  var toast=document.getElementById('toast'),tt=null;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add('show');
+    clearTimeout(tt);
+    tt=setTimeout(function(){toast.classList.remove('show');},1600);
+  }
+  document.getElementById('shareBtn').addEventListener('click',function(){
+    var data={title:'Ludhiana Service — Shop Registration',url:location.href};
+    if(navigator.share){
+      navigator.share(data).catch(function(){});
+    }else if(navigator.clipboard){
+      navigator.clipboard.writeText(location.href)
+        .then(function(){showToast('Link copied');})
+        .catch(function(){showToast('Copy failed');});
+    }else{
+      showToast('Sharing not supported');
+    }
+  });
+})();
+</script>
+</body>
+</html>
